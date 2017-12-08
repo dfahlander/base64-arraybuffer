@@ -1,3 +1,8 @@
+# 0.2.0
+
+- Build: Use non-deprecated env over es2015; remove unused babel-loader
+- npm: Update devDeps (rollup, eslint)
+
 # 0.1.0 (First version adapted from [base64-arraybuffer](https://github.com/niklasvh/base64-arraybuffer))
 
 - Refactoring/Build: Convert to ES6 source and apply Rollup with
