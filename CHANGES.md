@@ -1,3 +1,7 @@
+# 0.3.1
+
+- Fix `.npmignore`
+
 # 0.3.0
 
 - Build: Add Yarn
