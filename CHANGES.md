@@ -1,3 +1,7 @@
+# 0.3.0
+
+- Build: Add Yarn
+
 # 0.2.0
 
 - Build: Use non-deprecated env over es2015; remove unused babel-loader
