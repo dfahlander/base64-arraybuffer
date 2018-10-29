@@ -11,6 +11,16 @@ export default [{
         babel()
     ]
 }, {
+    input: 'src/base64-arraybuffer.js',
+    output: {
+        file: 'dist/base64-arraybuffer-es.js',
+        format: 'es',
+        name: 'Base64ArrayBuffer'
+    },
+    plugins: [
+        babel()
+    ]
+}, {
     input: 'test/test.js',
     output: {
         file: 'test/test-polyglot.js',

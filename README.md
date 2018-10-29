@@ -20,5 +20,5 @@ The library encodes and decodes base64 to and from ArrayBuffers
 
 ## License
 
-Copyright (c) 2017 Brett Zamir, 2012 Niklas von Hertzen
+Copyright (c) 2017-2018 Brett Zamir, 2012 Niklas von Hertzen
 Licensed under the MIT license.

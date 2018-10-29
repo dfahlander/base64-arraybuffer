@@ -1,7 +1,7 @@
 {
   "name": "base64-arraybuffer-es6",
   "description": "Encode/decode base64 data into ArrayBuffers",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "homepage": "https://github.com/brettz9/base64-arraybuffer",
   "author": "Brett Zamir",
   "contributors": [
@@ -20,32 +20,31 @@
   },
   "license": "MIT",
   "main": "dist/base64-arraybuffer.js",
-  "module": "src/base64-arraybuffer.js",
+  "module": "dist/base64-arraybuffer-es.js",
   "engines": {
     "node": ">= 0.6.0"
   },
   "scripts": {
-    "eslint": "eslint --ignore-path=test/test-polyglot.js src/**/*.js test/**/*.js",
+    "eslint": "eslint .",
     "build": "rollup -c",
     "test": "npm run eslint && npm run build && nodeunit test/test-polyglot.js",
     "browser-test": "npm run eslint && npm run build && node server.js test/"
   },
   "dependencies": {},
   "devDependencies": {
-    "babel-core": "6.26.0",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "4.13.0",
-    "eslint-config-standard": "10.2.1",
-    "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-node": "5.2.1",
-    "eslint-plugin-promise": "3.6.0",
-    "eslint-plugin-standard": "3.0.1",
-    "node-static": "0.7.10",
-    "nodeunit": "0.11.2",
-    "opn": "5.1.0",
-    "rollup": "0.52.1",
-    "rollup-plugin-babel": "^3.0.2"
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "eslint": "5.8.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-node": "8.0.0",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-standard": "4.0.0",
+    "node-static": "0.7.11",
+    "nodeunit": "0.11.3",
+    "opn": "5.4.0",
+    "rollup": "0.66.6",
+    "rollup-plugin-babel": "^4.0.3"
   },
   "keywords": [
     "base64",
