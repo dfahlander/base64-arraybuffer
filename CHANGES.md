@@ -1,5 +1,9 @@
 # base64-arraybuffer-es6
 
+## 0.4.1
+
+- Fix `.npmignore` to include proper files in package
+
 ## 0.4.0
 
 - Breaking change: Point to `dist` ES version for `module`; browser versions
