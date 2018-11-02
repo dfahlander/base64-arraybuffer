@@ -15,7 +15,8 @@ for (let i = 0; i < chars.length; i++) {
 }
 
 export const encode = function (arraybuffer, byteOffset, length) {
-    const bytes = new Uint8Array(arraybuffer, byteOffset, length),
+    if (length == null) length = arraybuffer.byteLength; // Needed for Safari
+    const bytes = new Uint8Array(arraybuffer, byteOffset || 0 /* Needed for Safari */, length),
         len = bytes.length;
     let base64 = '';
 
